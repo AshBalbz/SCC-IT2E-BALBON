@@ -1,41 +1,58 @@
 package balbon;
 
+import java.util.Scanner;
+
 public class Balbon {
 
     public static void main(String[] args) {
         
-//        Account ac = new Account();
-//        ac.getAccounts();
-        
-        Accounts acs = new Accounts();
-        acs.addAccounts(1001, "Ash", "Balbx", "ash04@gmail.com", "Ashing", "Ashing123@");
-        acs.viewAccounts();
-        
-//        Grade gr = new Grade();
-//        gr.getGrade();
-//        gr.viewGrade();
-        
-//        Grades grs = new Grades();
-//        grs.addGrades(1001, "Ash", 1.1, 1.2, 1.3, 1.4);
-//        grs.viewGrades();
-//        
-//        Sale sl = new Sale();
-//        sl.getSale();
-        
-//        Sales sls = new Sales();
-//        sls.addSales("Ash", "Sabon", 2, 25, 100, 50, 50);
-//        sls.viewSales();
+       Scanner sc = new Scanner(System.in);
+       Grade gr = new Grade();
+       Sale sl = new Sale();
+       Product pr = new Product();
+       Account acs = new Account();
+       
+       
+       
+       int option;
+       
+       do{
+           System.out.println("1.Grade"
+                   + "\n2.Sale"
+                   + "\n3.Product"
+                   + "\n4.Account");
+           
+           System.out.print("\nEnter Your Option: ");
+           option = sc.nextInt();
+           
+           
+                switch(option){
+                    case 1: 
+                        gr.getGrade();
+                        gr.viewGrade();
+                        break;
 
-//        Product pr = new Product();
-//        pr.getProduct();
-//        pr.viewProduct();
-        
-//        Products prs = new Products();
-//        prs.addProducts(1001, "Sabon", 20, 30, 60);
-//        prs.viewProducts();
+                    case 2:
+                        sl.getSale();
+                        break;
 
+                    case 3:
+                        pr.getProduct();
+                        pr.viewProduct();
+                        break;
 
-        
-    }
+                    case 4:
+                        acs.getAccounts();
+                        break;
+                        
+                    default:
+                        System.out.println("Invalid option, please try again. \n");
+                   
+           
+                }
+           
+       }while( option > 4 || option < 0 );
     
+    
+    }
 }
