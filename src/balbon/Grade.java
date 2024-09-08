@@ -6,14 +6,14 @@ public class Grade {
    
     Grades[] grs = new Grades[100];
     
-    int id, snum;
+        int id, snum;
         String name;
         double pre, mid, prefi, fin;
   
 public void getGrade(){
         Scanner x = new Scanner(System.in);
         
-            System.out.print("Enter no. of Students: ");
+            System.out.print("\nEnter no. of Students: ");
             snum = x.nextInt();
             
             for(int i = 0; i < snum; i++){

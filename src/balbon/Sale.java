@@ -11,7 +11,7 @@ public class Sale {
         int qty;
         double price, cash, tdue, change;
         
-        System.out.print("Enter Customer Name: ");
+        System.out.print("\nEnter Customer Name: ");
         cname = input.nextLine();
         
         System.out.print("Enter Product Name: ");

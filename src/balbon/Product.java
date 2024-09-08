@@ -10,11 +10,10 @@ public class Product {
     int profit, tep;
     Product[] pr = new Product[100];
     
-    // Method to input product details
     public void getProduct() {
         Scanner sc = new Scanner(System.in);
         
-        System.out.print("Enter the number of Products: ");
+        System.out.print("\nEnter the number of Products: ");
         int num_p = sc.nextInt();
         pr = new Product[num_p];  
         
@@ -47,7 +46,7 @@ public class Product {
     public void viewProduct() {
         double totalProfit = 0, totalTep = 0;
         
-        System.out.printf("%-10s %-10s %-10s %-10s %-10s %-10s %-10s %-10s\n", 
+        System.out.printf("\n%-10s %-10s %-10s %-10s %-10s %-10s %-10s %-10s\n", 
                 "ID", "Name", "Price", "Stocks", "Sold", "Profit", "TEP", "Status");
         
         for (Product product : pr) {
