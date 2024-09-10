@@ -25,7 +25,7 @@ public class Product {
             pr[i].pid = sc.nextInt();
             sc.nextLine(); 
             
-            System.out.print("Name: ");
+            System.out.print("Product Name: ");
             pr[i].name = sc.nextLine();
             
             System.out.print("Price: ");
@@ -41,6 +41,7 @@ public class Product {
             pr[i].profit = (int) (pr[i].price * pr[i].sold);  
             pr[i].tep = (int) (pr[i].price * pr[i].stock);    
         }
+        
     }
     
     public void viewProduct() {

@@ -26,6 +26,7 @@ public class Products {
         System.out.printf("%-10d %-10s %-10.2f %-10d %-10d %-10.2f %-10.2f %-10s\n",
                            this.pid, this.name, this.price, this.stocks, this.sold, profit, tep, status);
     }
+    
 }
 
 

@@ -19,5 +19,6 @@ public class Accounts {
     public void viewAccounts() {
         System.out.printf("%-5d %-15s %-15s %-20s %-15s %-15s\n", this.aid, this.firstName, this.lastName, this.email, this.user, this.password);
     }    
+//    
 }
 

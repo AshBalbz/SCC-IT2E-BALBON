@@ -15,7 +15,7 @@ public class Sales {
             
         }  
             
-         public void viewSales(){
+        public void viewSales(){
              double totd = quant * ppri;
              double change = pcash - totd;
              

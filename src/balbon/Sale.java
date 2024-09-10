@@ -35,6 +35,7 @@ public class Sale {
             }
         }while(tdue > cash);
         
+        
         System.out.println("");
         
         
@@ -57,5 +58,7 @@ public class Sale {
             change= cash - tdue;
             System.out.println("Change: " +change);
     }
+    
+    
 }
 

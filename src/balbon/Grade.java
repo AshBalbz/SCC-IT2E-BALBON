@@ -44,6 +44,7 @@ public void getGrade(){
                 System.out.println("");
                 
             }
+            
 }
     
             double tca = 0; 
@@ -65,12 +66,13 @@ public void getGrade(){
                     failed++;
                 }
             }
-            System.out.println("\n---------------------------------------------");
+            System.out.println("\n------------------------------------------------------------------------------");
             System.out.println("No. of Students: " + snum);
             System.out.println("Total Class Average: " + tca / snum);
             System.out.println("Number of passed: "+passed);
             System.out.println("Number of failed: "+failed);
         }
+  
     }
   
 

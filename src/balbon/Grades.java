@@ -6,10 +6,10 @@ public class Grades {
         String sname;
         double sprelim, smidterm, sprefi, sfinals,ave;
     
-    public void addGrades(int id, String sname, double p, double m, double pf, double f){
+    public void addGrades(int id, String studn, double p, double m, double pf, double f){
        
         this.sid = id;
-        this.sname = sname;
+        this.sname = studn;
         this.sprelim = p;
         this.smidterm = m;
         this.sprefi = pf;
@@ -21,9 +21,9 @@ public class Grades {
          
         String rem = (ave>3.0) ? "Failed": "Passed";
         
-        System.out.printf("\n%-10d %-10s %-10.2f %-10.2f %-10.2f %-10.2f %-10.2f %-10s",
+        System.out.printf("%-10d %-10s %-10.2f %-10.2f %-10.2f %-10.2f %-10.2f %-10s\n",
                            this.sid, this.sname, this.sprelim, this.smidterm, this.sprefi, this.sfinals, ave, rem);
-        System.out.println("\n");
     }
+    
 } 
 
