@@ -23,8 +23,17 @@ public class Sale {
         System.out.print("Enter Price: ");
         price = input.nextInt();
         
+        
+        tdue = price*qty;
+          
+        do{
         System.out.print("Enter Cash: ");
         cash = input.nextInt();
+        
+            if(tdue > cash){
+                System.out.println("Insufficient Cash\n");
+            }
+        }while(tdue > cash);
         
         System.out.println("");
         
@@ -40,7 +49,6 @@ public class Sale {
 
             System.out.println("--------------------------------------------");
 
-            tdue = price*qty;
             System.out.println("Total Due: " +tdue);
             System.out.println("Cash: " +cash);
 
